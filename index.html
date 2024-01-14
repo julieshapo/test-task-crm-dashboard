@@ -1,13 +1,228 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Courgette&family=Open+Sans:wght@400;500;700&family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>CRM Dashboard</title>
   </head>
   <body>
-    <div id="app"></div>
+    <header class="header">
+      <p class="header__text">Hello Evano 👋,</p>
+    </header>
+    <div class="dashboard-container">
+      <aside class="sidebar">
+        <a href="./index.html"
+          ><svg width="37" height="37">
+            <use href="./public/icons/icon-logo.svg"></use>
+          </svg>
+          Dashboard <span>v.01</span></a
+        >
+        <nav class="dashboard-nav">
+          <ul>
+            <li class="active">
+              <a href="#dashboard">
+                <svg width="37" height="37">
+                  <use href="./public/icons/dashboard.svg"></use>
+                </svg>
+                Dashboard</a
+              >
+            </li>
+            <li>
+              <a href="#reports">
+                <div class="dashboard__nav--wrap">
+                  <svg width="37" height="37">
+                    <use href="./public/icons/3d-square.svg"></use>
+                  </svg>
+                  Product
+                </div>
+                <svg width="37" height="37">
+                  <use href="./public/icons/chevron-right.svg"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#settings">
+                <div class="dashboard__nav--wrap">
+                  <svg width="37" height="37">
+                    <use href="./public/icons/user-square.svg"></use>
+                  </svg>
+                  Customers
+                </div>
+                <svg width="37" height="37">
+                  <use href="./public/icons/chevron-right.svg"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#settings">
+                <div class="dashboard__nav--wrap">
+                  <svg width="37" height="37">
+                    <use href="./public/icons/wallet-money.svg"></use>
+                  </svg>
+                  Income
+                </div>
+                <svg width="37" height="37">
+                  <use href="./public/icons/chevron-right.svg"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#settings">
+                <div class="dashboard__nav--wrap">
+                  <svg width="37" height="37">
+                    <use href="./public/icons/discount-shape.svg"></use>
+                  </svg>
+                  Promote
+                </div>
+                <svg width="37" height="37">
+                  <use href="./public/icons/chevron-right.svg"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#settings">
+                <div class="dashboard__nav--wrap">
+                  <svg width="37" height="37">
+                    <use href="./public/icons/message-question.svg"></use>
+                  </svg>
+                  Help
+                </div>
+                <svg width="37" height="37">
+                  <use href="./public/icons/chevron-right.svg"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="user-account">
+          <img
+            src="/images/evano-pic.jpg"
+            alt="photo of user"
+            width="42"
+            height="42"
+          />
+          <div class="user-text-wrap">
+            <p>Evano</p>
+            <p>Project Manager</p>
+          </div>
+        </div>
+      </aside>
+      <main class="dashboard-content">
+        <div class="dashboard__customers--wrap">
+          <h2>All Customers</h2>
+          <p>Active Members</p>
+          <div class="customers__search--wrap">
+            <svg width="37" height="37">
+              <use href="./public/icons/search.svg"></use>
+            </svg>
+            <input type="text" placeholder="Search" />
+          </div>
+        </div>
+        <table>
+          <thead>
+            <tr>
+              <th>Customer Name</th>
+              <th>Company</th>
+              <th>Phone Number</th>
+              <th>Email</th>
+              <th>Country</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Jane Cooper</td>
+              <td>Microsoft</td>
+              <td>(225) 555-0118</td>
+              <td>jane@microsoft.com</td>
+              <td>United States</td>
+              <td>Active</td>
+            </tr>
+            <tr>
+              <td>Floyd Miles</td>
+              <td>Yahoo</td>
+              <td>(205) 555-0100</td>
+              <td>floyd@yahoo.com</td>
+              <td>Kiribati</td>
+              <td>Inactive</td>
+            </tr>
+            <tr>
+              <td>Ronald Richards</td>
+              <td>Adobe</td>
+              <td>(302) 555-0107</td>
+              <td>ronald@adobe.com</td>
+              <td>Israel</td>
+              <td>Inactive</td>
+            </tr>
+            <tr>
+              <td>Marvin McKinney</td>
+              <td>Tesla</td>
+              <td>(252) 555-0126</td>
+              <td>marvin@tesla.com</td>
+              <td>Iran</td>
+              <td>Active</td>
+            </tr>
+            <tr>
+              <td>Jerome Bell</td>
+              <td>Google</td>
+              <td>(629) 555-0129</td>
+              <td>jerome@google.com</td>
+              <td>Réunion</td>
+              <td>Active</td>
+            </tr>
+            <tr>
+              <td>Kathryn Murphy</td>
+              <td>Microsoft</td>
+              <td>(406) 555-0120</td>
+              <td>kathryn@microsoft.com</td>
+              <td>Curaçao</td>
+              <td>Active</td>
+            </tr>
+            <tr>
+              <td>Jacob Jones</td>
+              <td>Yahoo</td>
+              <td>(208) 555-0112</td>
+              <td>jacob@yahoo.com</td>
+              <td>Brazil</td>
+              <td>Active</td>
+            </tr>
+            <tr>
+              <td>Kristin Watson</td>
+              <td>Facebook</td>
+              <td>(704) 555-0127</td>
+              <td>kristin@facebook.com</td>
+              <td>Åland Islands</td>
+              <td>Inactive</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="paginator">
+          <div class="pagination-info">Showing data 1 to 8 of 256K entries</div>
+          <div class="pagination-controls">
+            <span class="pagination-arrows">&lt;</span>
+            <span class="pagination-page">1</span>
+            <span class="pagination-page">2</span>
+            <span class="pagination-page">3</span>
+            <span class="pagination-page">4</span>
+            <div class="pagination-dots">
+              <span>&middot;</span>
+              <span>&middot;</span>
+              <span>&middot;</span>
+            </div>
+            <span class="pagination-page">40</span>
+            <span class="pagination-arrows">&gt;</span>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer></footer>
     <script type="module" src="/main.js"></script>
   </body>
 </html>
