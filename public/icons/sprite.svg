@@ -49,5 +49,14 @@
 <symbol id="icon-arrow-right" viewBox="0 0 32 32">
 <path d="M11.029 8.363c0.483-0.484 1.267-0.484 1.751 0l7.429 7.429c0.483 0.483 0.483 1.267 0 1.751l-7.429 7.429c-0.483 0.484-1.267 0.484-1.751 0s-0.483-1.267 0-1.751l6.553-6.553-6.553-6.553c-0.483-0.483-0.483-1.267 0-1.751z"></path>
 </symbol>
+<symbol id="icon-pagination-left" viewBox="0 0 23 32">
+<path fill="#404b52" style="fill: var(--color1, #404b52)" d="M13.422 29.221l-12.617-12.453 12.617-12.453h7.899l-12.672 12.453 12.672 12.453h-7.899z"></path>
+</symbol>
+<symbol id="icon-pagination-right" viewBox="0 0 23 32">
+<path fill="#404b52" style="fill: var(--color1, #404b52)" d="M1.573 4.315h7.899l12.617 12.453-12.617 12.453h-7.899l12.672-12.453-12.672-12.453z"></path>
+</symbol>
+<symbol id="icon-menu" viewBox="0 0 32 32">
+<path d="M2 6h28v6h-28zM2 14h28v6h-28zM2 22h28v6h-28z"></path>
+</symbol>
 </defs>
 </svg>

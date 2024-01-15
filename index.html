@@ -22,7 +22,7 @@
   <body>
     <header></header>
     <div class="container">
-      <aside class="sidebar">
+      <aside class="sidebar sidebar-js">
         <div>
           <a class="sidebar__logo" href="./index.html"
             ><svg class="sidebar__logo--icon" width="37" height="37">
@@ -35,7 +35,7 @@
           <nav class="sidebar__nav">
             <ul class="sidebar__nav--list">
               <li class="sidebar__nav--item">
-                <a class="sidebar__nav--link" href="#dashboard">
+                <a class="sidebar__nav--link" href="#">
                   <div class="sidebar__nav--wrap">
                     <svg class="sidebar__nav--icon" width="24" height="24">
                       <use href="/icons/sprite.svg#icon-dashboard"></use>
@@ -45,7 +45,7 @@
                 >
               </li>
               <li class="sidebar__nav--item">
-                <a class="sidebar__nav--link" href="#reports">
+                <a class="sidebar__nav--link" href="#">
                   <div class="sidebar__nav--wrap">
                     <svg class="sidebar__nav--icon" width="24" height="24">
                       <use href="/icons/sprite.svg#icon-d-square"></use>
@@ -58,7 +58,7 @@
                 </a>
               </li>
               <li class="sidebar__nav--item active">
-                <a class="sidebar__nav--link active" href="#settings">
+                <a class="sidebar__nav--link active" href="#">
                   <div class="sidebar__nav--wrap">
                     <svg class="sidebar__nav--icon" width="24" height="24">
                       <use href="/icons/sprite.svg#icon-user-square"></use>
@@ -75,7 +75,7 @@
                 </a>
               </li>
               <li class="sidebar__nav--item">
-                <a class="sidebar__nav--link" href="#settings">
+                <a class="sidebar__nav--link" href="#">
                   <div class="sidebar__nav--wrap">
                     <svg class="sidebar__nav--icon" width="24" height="24">
                       <use href="/icons/sprite.svg#icon-wallet-money"></use>
@@ -88,7 +88,7 @@
                 </a>
               </li>
               <li class="sidebar__nav--item">
-                <a class="sidebar__nav--link" href="#settings">
+                <a class="sidebar__nav--link" href="#">
                   <div class="sidebar__nav--wrap">
                     <svg class="sidebar__nav--icon" width="24" height="24">
                       <use href="/icons/sprite.svg#icon-discount-shape"></use>
@@ -101,7 +101,7 @@
                 </a>
               </li>
               <li class="sidebar__nav--item">
-                <a class="sidebar__nav--link" href="#settings">
+                <a class="sidebar__nav--link" href="#">
                   <div class="sidebar__nav--wrap">
                     <svg class="sidebar__nav--icon" width="24" height="24">
                       <use href="/icons/sprite.svg#icon-message-question"></use>
@@ -129,113 +129,166 @@
           </div>
         </div>
       </aside>
-      <main class="dashboard-container">
-        <p class="header__text">Hello Evano 👋,</p>
-        <div class="dashboard__customers--wrap">
-          <h2>All Customers</h2>
-          <p>Active Members</p>
-          <div class="customers__search--wrap">
-            <svg width="37" height="37">
-              <use href="./public/icons/search.svg"></use>
+      <main class="dashboard__container">
+        <div class="dashboard__wrap">
+          <p class="dashboard__text">Hello Evano 👋,</p>
+          <button class="dashboard__sidebar--mob-open">
+            <svg width="18" height="18">
+              <use href="/icons/sprite.svg#icon-menu"></use>
             </svg>
-            <input type="text" placeholder="Search" />
-          </div>
+          </button>
         </div>
-        <table>
-          <thead>
-            <tr>
-              <th>Customer Name</th>
-              <th>Company</th>
-              <th>Phone Number</th>
-              <th>Email</th>
-              <th>Country</th>
-              <th>Status</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Jane Cooper</td>
-              <td>Microsoft</td>
-              <td>(225) 555-0118</td>
-              <td>jane@microsoft.com</td>
-              <td>United States</td>
-              <td>Active</td>
-            </tr>
-            <tr>
-              <td>Floyd Miles</td>
-              <td>Yahoo</td>
-              <td>(205) 555-0100</td>
-              <td>floyd@yahoo.com</td>
-              <td>Kiribati</td>
-              <td>Inactive</td>
-            </tr>
-            <tr>
-              <td>Ronald Richards</td>
-              <td>Adobe</td>
-              <td>(302) 555-0107</td>
-              <td>ronald@adobe.com</td>
-              <td>Israel</td>
-              <td>Inactive</td>
-            </tr>
-            <tr>
-              <td>Marvin McKinney</td>
-              <td>Tesla</td>
-              <td>(252) 555-0126</td>
-              <td>marvin@tesla.com</td>
-              <td>Iran</td>
-              <td>Active</td>
-            </tr>
-            <tr>
-              <td>Jerome Bell</td>
-              <td>Google</td>
-              <td>(629) 555-0129</td>
-              <td>jerome@google.com</td>
-              <td>Réunion</td>
-              <td>Active</td>
-            </tr>
-            <tr>
-              <td>Kathryn Murphy</td>
-              <td>Microsoft</td>
-              <td>(406) 555-0120</td>
-              <td>kathryn@microsoft.com</td>
-              <td>Curaçao</td>
-              <td>Active</td>
-            </tr>
-            <tr>
-              <td>Jacob Jones</td>
-              <td>Yahoo</td>
-              <td>(208) 555-0112</td>
-              <td>jacob@yahoo.com</td>
-              <td>Brazil</td>
-              <td>Active</td>
-            </tr>
-            <tr>
-              <td>Kristin Watson</td>
-              <td>Facebook</td>
-              <td>(704) 555-0127</td>
-              <td>kristin@facebook.com</td>
-              <td>Åland Islands</td>
-              <td>Inactive</td>
-            </tr>
-          </tbody>
-        </table>
-        <div class="paginator">
-          <div class="pagination-info">Showing data 1 to 8 of 256K entries</div>
-          <div class="pagination-controls">
-            <span class="pagination-arrows">&lt;</span>
-            <span class="pagination-page">1</span>
-            <span class="pagination-page">2</span>
-            <span class="pagination-page">3</span>
-            <span class="pagination-page">4</span>
-            <div class="pagination-dots">
-              <span>&middot;</span>
-              <span>&middot;</span>
-              <span>&middot;</span>
+        <section class="customers__section">
+          <div class="customers__wrap">
+            <div>
+              <h2 class="customers__title">All Customers</h2>
+              <p class="customers__text">Active Members</p>
             </div>
-            <span class="pagination-page">40</span>
-            <span class="pagination-arrows">&gt;</span>
+            <div class="customers__search--wrap">
+              <svg class="customers__search--icon" width="24" height="24">
+                <use href="/icons/sprite.svg#icon-search"></use>
+              </svg>
+              <input
+                class="customers__search--input"
+                type="text"
+                placeholder="Search"
+              />
+            </div>
           </div>
-        </div>
+          <table class="customers__table">
+            <thead>
+              <tr>
+                <th class="customers__table--head-title">Customer Name</th>
+                <th class="customers__table--head-title">Company</th>
+                <th class="customers__table--head-title">Phone Number</th>
+                <th class="customers__table--head-title">Email</th>
+                <th class="customers__table--head-title">Country</th>
+                <th class="customers__table--head-title">Status</th>
+              </tr>
+            </thead>
+            <tbody class="customers__table--body">
+              <tr>
+                <td class="customers__table--text">Jane Cooper</td>
+                <td class="customers__table--text">Microsoft</td>
+                <td class="customers__table--text">(225) 555-0118</td>
+                <td class="customers__table--text">jane@microsoft.com</td>
+                <td class="customers__table--text">United States</td>
+                <td class="customers__table--status">
+                  <span class="customers__table--status-btn active"
+                    >Active</span
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td class="customers__table--text">Floyd Miles</td>
+                <td class="customers__table--text">Yahoo</td>
+                <td class="customers__table--text">(205) 555-0100</td>
+                <td class="customers__table--text">floyd@yahoo.com</td>
+                <td class="customers__table--text">Kiribati</td>
+                <td class="customers__table--status">
+                  <span class="customers__table--status-btn inactive"
+                    >Inactive</span
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td class="customers__table--text">Ronald Richards</td>
+                <td class="customers__table--text">Adobe</td>
+                <td class="customers__table--text">(302) 555-0107</td>
+                <td class="customers__table--text">ronald@adobe.com</td>
+                <td class="customers__table--text">Israel</td>
+                <td class="customers__table--status">
+                  <span class="customers__table--status-btn inactive"
+                    >Inactive</span
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td class="customers__table--text">Marvin McKinney</td>
+                <td class="customers__table--text">Tesla</td>
+                <td class="customers__table--text">(252) 555-0126</td>
+                <td class="customers__table--text">marvin@tesla.com</td>
+                <td class="customers__table--text">Iran</td>
+                <td class="customers__table--status">
+                  <span class="customers__table--status-btn active"
+                    >Active</span
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td class="customers__table--text">Jerome Bell</td>
+                <td class="customers__table--text">Google</td>
+                <td class="customers__table--text">(629) 555-0129</td>
+                <td class="customers__table--text">jerome@google.com</td>
+                <td class="customers__table--text">Réunion</td>
+                <td class="customers__table--status">
+                  <span class="customers__table--status-btn active"
+                    >Active</span
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td class="customers__table--text">Kathryn Murphy</td>
+                <td class="customers__table--text">Microsoft</td>
+                <td class="customers__table--text">(406) 555-0120</td>
+                <td class="customers__table--text">kathryn@microsoft.com</td>
+                <td class="customers__table--text">Curaçao</td>
+                <td class="customers__table--status">
+                  <span class="customers__table--status-btn active"
+                    >Active</span
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td class="customers__table--text">Jacob Jones</td>
+                <td class="customers__table--text">Yahoo</td>
+                <td class="customers__table--text">(208) 555-0112</td>
+                <td class="customers__table--text">jacob@yahoo.com</td>
+                <td class="customers__table--text">Brazil</td>
+                <td class="customers__table--status">
+                  <span class="customers__table--status-btn active"
+                    >Active</span
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td class="customers__table--text">Kristin Watson</td>
+                <td class="customers__table--text">Facebook</td>
+                <td class="customers__table--text">(704) 555-0127</td>
+                <td class="customers__table--text">kristin@facebook.com</td>
+                <td class="customers__table--text">Åland Islands</td>
+                <td class="customers__table--status">
+                  <span class="customers__table--status-btn inactive"
+                    >Inactive</span
+                  >
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="pagination">
+            <div class="pagination__text">
+              Showing data 1 to 8 of 256K entries
+            </div>
+            <div class="pagination__controls">
+              <span class="pagination__item">
+                <svg width="8" height="12">
+                  <use href="/icons/sprite.svg#icon-pagination-left"></use>
+                </svg>
+              </span>
+              <span class="pagination__item active">1</span>
+              <span class="pagination__item">2</span>
+              <span class="pagination__item">3</span>
+              <span class="pagination__item">4</span>
+              <span class="pagination__item dots">...</span>
+              <span class="pagination__item">40</span>
+              <span class="pagination__item">
+                <svg width="8" height="12">
+                  <use href="/icons/sprite.svg#icon-pagination-right"></use>
+                </svg>
+              </span>
+            </div>
+          </div>
+        </section>
       </main>
     </div>
     <footer></footer>
