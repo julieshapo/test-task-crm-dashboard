@@ -10,111 +10,127 @@
       href="https://fonts.googleapis.com/css2?family=Courgette&family=Open+Sans:wght@400;500;700&family=Poppins:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.css"
+      integrity="sha512-gA2Bvu0/hw4oj0Lp8ZHjK+o3S4BE5m8d/wNVy6ktKLhHKPpWLQwv9ixzuWirWOakoJqlBdePq2NhoCaUOQ5npQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>CRM Dashboard</title>
   </head>
   <body>
-    <header class="header">
-      <p class="header__text">Hello Evano 👋,</p>
-    </header>
-    <div class="dashboard-container">
+    <header></header>
+    <div class="container">
       <aside class="sidebar">
-        <a href="./index.html"
-          ><svg width="37" height="37">
-            <use href="./public/icons/icon-logo.svg"></use>
-          </svg>
-          Dashboard <span>v.01</span></a
-        >
-        <nav class="dashboard-nav">
-          <ul>
-            <li class="active">
-              <a href="#dashboard">
-                <svg width="37" height="37">
-                  <use href="./public/icons/dashboard.svg"></use>
-                </svg>
-                Dashboard</a
-              >
-            </li>
-            <li>
-              <a href="#reports">
-                <div class="dashboard__nav--wrap">
-                  <svg width="37" height="37">
-                    <use href="./public/icons/3d-square.svg"></use>
+        <div>
+          <a class="sidebar__logo" href="./index.html"
+            ><svg class="sidebar__logo--icon" width="37" height="37">
+              <use href="/icons/sprite.svg#icon-logo"></use>
+            </svg>
+            <div class="sidebar__logo--text-wrap">
+              Dashboard <span class="sidebar__logo--text">v.01</span>
+            </div></a
+          >
+          <nav class="sidebar__nav">
+            <ul class="sidebar__nav--list">
+              <li class="sidebar__nav--item">
+                <a class="sidebar__nav--link" href="#dashboard">
+                  <div class="sidebar__nav--wrap">
+                    <svg class="sidebar__nav--icon" width="24" height="24">
+                      <use href="/icons/sprite.svg#icon-dashboard"></use>
+                    </svg>
+                    Dashboard
+                  </div></a
+                >
+              </li>
+              <li class="sidebar__nav--item">
+                <a class="sidebar__nav--link" href="#reports">
+                  <div class="sidebar__nav--wrap">
+                    <svg class="sidebar__nav--icon" width="24" height="24">
+                      <use href="/icons/sprite.svg#icon-d-square"></use>
+                    </svg>
+                    Product
+                  </div>
+                  <svg class="sidebar__nav--icon-arrow" width="16" height="16">
+                    <use href="/icons/sprite.svg#icon-chevron-right"></use>
                   </svg>
-                  Product
-                </div>
-                <svg width="37" height="37">
-                  <use href="./public/icons/chevron-right.svg"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="#settings">
-                <div class="dashboard__nav--wrap">
-                  <svg width="37" height="37">
-                    <use href="./public/icons/user-square.svg"></use>
+                </a>
+              </li>
+              <li class="sidebar__nav--item active">
+                <a class="sidebar__nav--link active" href="#settings">
+                  <div class="sidebar__nav--wrap">
+                    <svg class="sidebar__nav--icon" width="24" height="24">
+                      <use href="/icons/sprite.svg#icon-user-square"></use>
+                    </svg>
+                    Customers
+                  </div>
+                  <svg
+                    class="sidebar__nav--icon-arrow active"
+                    width="16"
+                    height="16"
+                  >
+                    <use href="/icons/sprite.svg#icon-chevron-right"></use>
                   </svg>
-                  Customers
-                </div>
-                <svg width="37" height="37">
-                  <use href="./public/icons/chevron-right.svg"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="#settings">
-                <div class="dashboard__nav--wrap">
-                  <svg width="37" height="37">
-                    <use href="./public/icons/wallet-money.svg"></use>
+                </a>
+              </li>
+              <li class="sidebar__nav--item">
+                <a class="sidebar__nav--link" href="#settings">
+                  <div class="sidebar__nav--wrap">
+                    <svg class="sidebar__nav--icon" width="24" height="24">
+                      <use href="/icons/sprite.svg#icon-wallet-money"></use>
+                    </svg>
+                    Income
+                  </div>
+                  <svg class="sidebar__nav--icon-arrow" width="16" height="16">
+                    <use href="/icons/sprite.svg#icon-chevron-right"></use>
                   </svg>
-                  Income
-                </div>
-                <svg width="37" height="37">
-                  <use href="./public/icons/chevron-right.svg"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="#settings">
-                <div class="dashboard__nav--wrap">
-                  <svg width="37" height="37">
-                    <use href="./public/icons/discount-shape.svg"></use>
+                </a>
+              </li>
+              <li class="sidebar__nav--item">
+                <a class="sidebar__nav--link" href="#settings">
+                  <div class="sidebar__nav--wrap">
+                    <svg class="sidebar__nav--icon" width="24" height="24">
+                      <use href="/icons/sprite.svg#icon-discount-shape"></use>
+                    </svg>
+                    Promote
+                  </div>
+                  <svg class="sidebar__nav--icon-arrow" width="16" height="16">
+                    <use href="/icons/sprite.svg#icon-chevron-right"></use>
                   </svg>
-                  Promote
-                </div>
-                <svg width="37" height="37">
-                  <use href="./public/icons/chevron-right.svg"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="#settings">
-                <div class="dashboard__nav--wrap">
-                  <svg width="37" height="37">
-                    <use href="./public/icons/message-question.svg"></use>
+                </a>
+              </li>
+              <li class="sidebar__nav--item">
+                <a class="sidebar__nav--link" href="#settings">
+                  <div class="sidebar__nav--wrap">
+                    <svg class="sidebar__nav--icon" width="24" height="24">
+                      <use href="/icons/sprite.svg#icon-message-question"></use>
+                    </svg>
+                    Help
+                  </div>
+                  <svg class="sidebar__nav--icon-arrow" width="16" height="16">
+                    <use href="/icons/sprite.svg#icon-chevron-right"></use>
                   </svg>
-                  Help
-                </div>
-                <svg width="37" height="37">
-                  <use href="./public/icons/chevron-right.svg"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </nav>
-        <div class="user-account">
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="sidebar__user">
           <img
             src="/images/evano-pic.jpg"
             alt="photo of user"
             width="42"
             height="42"
           />
-          <div class="user-text-wrap">
-            <p>Evano</p>
-            <p>Project Manager</p>
+          <div class="sidebar__user--text-wrap">
+            <p class="sidebar__user--name">Evano</p>
+            <p class="sidebar__user--title">Project Manager</p>
           </div>
         </div>
       </aside>
-      <main class="dashboard-content">
+      <main class="dashboard-container">
+        <p class="header__text">Hello Evano 👋,</p>
         <div class="dashboard__customers--wrap">
           <h2>All Customers</h2>
           <p>Active Members</p>
